@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sahasra Lingarchana · Phani &amp; Deepthi Family</title>
+<meta property="og:title" content="🙏 You're invited — Sahasra Lingarchana">
+<meta property="og:description" content="Phani &amp; Deepthi Family invite you. Open to view the invitation and RSVP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0b1f4d; --gold: #e9c46a; --gold-2: #c9962b;
+    --cream: #fff8e7; --text: #f4ecd8; --muted: #c8c2b0;
+    --ok: #7bd389; --err: #ff9b8a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    font-family: "Lato", system-ui, sans-serif; color: var(--text);
+    background: radial-gradient(ellipse at top, #1b3f8a 0%, var(--navy) 55%, #060f2a 100%) fixed;
+    min-height: 100vh; line-height: 1.5;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 24px 16px 64px; }
+  .om { text-align: center; color: var(--gold); font-size: 1.15rem; letter-spacing: .08em; margin: 4px 0 16px; }
+  .invite {
+    display: block; width: 100%; height: auto; border-radius: 14px;
+    box-shadow: 0 0 0 1px rgba(233,196,106,.45), 0 18px 50px rgba(0,0,0,.55);
+  }
+  h1, h2 { font-family: "Cormorant Garamond", serif; font-weight: 700; color: var(--gold); text-align: center; }
+  h1 { font-size: 2.6rem; line-height: 1.1; margin: 28px 0 6px; }
+  h2 { font-size: 2.1rem; margin: 40px 0 6px; }
+  .sub { text-align: center; font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 1.35rem; color: var(--cream); margin: 0 0 6px; }
+  .divider { text-align: center; color: var(--gold-2); margin-bottom: 20px; letter-spacing: .5em; }
+  .card {
+    background: rgba(9, 24, 64, .78); border: 1px solid rgba(233,196,106,.5);
+    border-radius: 14px; padding: 22px 20px; box-shadow: inset 0 0 30px rgba(233,196,106,.06);
+  }
+  .message { margin-top: 28px; text-align: center; font-family: "Cormorant Garamond", serif; font-size: 1.3rem; line-height: 1.55; color: var(--cream); }
+  .message p { margin: 0 0 14px; }
+  .message p:last-child { margin-bottom: 0; }
+  .message strong { color: var(--gold); font-weight: 700; }
+  .message .om-line { color: var(--gold); font-size: 1.5rem; font-weight: 700; }
+  .welcome { color: var(--gold); font-family: "Cormorant Garamond", serif; font-size: 1.6rem; text-align: center; margin: 28px 0 0; }
+  .details { display: grid; gap: 10px; font-size: 1.05rem; }
+  .details div { display: flex; gap: 12px; align-items: flex-start; }
+  .details .ic { color: var(--gold); width: 22px; flex: none; text-align: center; }
+  .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .btn-sec {
+    flex: 1 1 160px; text-align: center; text-decoration: none; color: var(--gold);
+    border: 1px solid var(--gold-2); border-radius: 999px; padding: 10px 14px;
+    font-weight: 700; font-size: .95rem; background: transparent; cursor: pointer; font-family: inherit;
+  }
+  .btn-sec:hover { background: rgba(233,196,106,.1); }
+  form { display: grid; gap: 16px; }
+  label { display: block; font-weight: 700; margin-bottom: 6px; color: var(--cream); }
+  .hint { font-weight: 400; color: var(--muted); font-size: .88rem; }
+  input[type=text], input[type=tel], input[type=email], textarea, select {
+    width: 100%; padding: 12px 14px; font: inherit; font-size: 1rem; color: var(--navy);
+    background: var(--cream); border: 2px solid transparent; border-radius: 10px;
+  }
+  input:focus, textarea:focus, select:focus { outline: none; border-color: var(--gold); }
+  input[readonly] { background: #e9e2cf; }
+  textarea { min-height: 80px; resize: vertical; }
+  .choice { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .choice input { position: absolute; opacity: 0; pointer-events: none; }
+  .choice label {
+    margin: 0; text-align: center; padding: 12px 8px; border-radius: 10px; cursor: pointer;
+    border: 1px solid var(--gold-2); color: var(--gold); font-weight: 700;
+  }
+  .choice input:checked + label { background: linear-gradient(180deg, var(--gold), var(--gold-2)); color: var(--navy); }
+  .choice input:focus-visible + label { outline: 2px solid var(--cream); outline-offset: 2px; }
+  .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .submit {
+    margin-top: 4px; padding: 14px; font: inherit; font-weight: 700; font-size: 1.1rem; color: var(--navy);
+    background: linear-gradient(180deg, #f3d683, var(--gold-2)); border: 0; border-radius: 999px;
+    cursor: pointer; box-shadow: 0 6px 18px rgba(201,150,43,.35);
+  }
+  .submit:disabled { opacity: .6; cursor: wait; }
+  .status { min-height: 1.4em; text-align: center; font-weight: 700; }
+  .status.ok { color: var(--ok); }
+  .status.err { color: var(--err); }
+  .found {
+    background: rgba(233,196,106,.12); border: 1px dashed var(--gold-2); color: var(--cream);
+    padding: 10px 12px; border-radius: 10px; font-size: .95rem;
+  }
+  .thanks { text-align: center; }
+  .thanks h3 { font-family: "Cormorant Garamond", serif; color: var(--gold); font-size: 1.8rem; margin: 6px 0; }
+  .linkish { background: none; border: 0; color: var(--muted); text-decoration: underline; cursor: pointer; font: inherit; font-size: .9rem; }
+  [hidden] { display: none !important; }
+  footer { text-align: center; margin-top: 36px; color: var(--muted); font-size: .9rem; }
+  footer .fam { font-family: "Cormorant Garamond", serif; font-style: italic; color: var(--gold); font-size: 1.4rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="om">॥ ఓం నమః శివాయ ॥</div>
+
+  <!-- ===== Gate: shown until a listed phone number is entered ===== -->
+  <section id="gate">
+    <h1>Sahasra Lingarchana</h1>
+    <p class="sub">with 1000 Shiva Lingas</p>
+    <div class="divider">✦ ✦ ✦</div>
+    <div class="card">
+      <form id="gateForm" novalidate>
+        <p style="margin:0;text-align:center;color:var(--cream)">You're invited! Please enter your phone number to open your invitation.</p>
+        <div>
+          <label for="gatePhone">Phone number</label>
+          <input id="gatePhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(602) 555-0123" required>
+        </div>
+        <button class="submit" id="gateBtn" type="submit">Open Invitation</button>
+        <div class="status" id="gateStatus" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Invitation: filled in from the guest-list check ===== -->
+  <section id="invitation" hidden>
+    <img class="invite" id="inviteImg" alt="Sahasra Lingarchana invitation from Phani &amp; Deepthi Family" hidden>
+
+    <p class="welcome" id="welcome"></p>
+
+    <div class="card message">
+      <p class="om-line">🙏 Om Namah Shivaya 🙏</p>
+      <p>With the divine blessings of Lord Shiva, we cordially invite you and your family to join us for the auspicious occasion of <strong>Sahasra Lingarchana with 1000 Shiva Lingas</strong> at our home.</p>
+      <p>We would be delighted to have you with us to offer prayers, seek Lord Shiva’s divine blessings, and share this sacred and spiritual occasion with our family.</p>
+      <p>Please join us with your family and receive the blessings of Lord Shiva for peace, happiness, prosperity, and good health.</p>
+    </div>
+
+    <h2>Event Details</h2>
+    <div class="divider">✦ ✦ ✦</div>
+    <div class="card">
+      <div class="details">
+        <div><span class="ic">📅</span><span id="dDate"></span></div>
+        <div><span class="ic">🕕</span><span id="dTime"></span></div>
+        <div><span class="ic">📍</span><span id="dAddr"></span></div>
+      </div>
+      <div class="btns">
+        <a class="btn-sec" target="_blank" rel="noopener" id="maps">Get Directions</a>
+        <a class="btn-sec" target="_blank" rel="noopener" id="gcal">Add to Google Calendar</a>
+        <button class="btn-sec" type="button" id="ics">Add to Apple / Outlook</button>
+      </div>
+    </div>
+
+    <h2>Kindly RSVP</h2>
+    <div class="divider">✦ ✦ ✦</div>
+    <div class="card">
+      <form id="form" novalidate>
+        <div class="found" id="found" hidden>We found your earlier RSVP — make any changes below and press Update.</div>
+        <div>
+          <label for="phone">Phone number</label>
+          <input id="phone" type="tel" readonly>
+        </div>
+        <div>
+          <label for="name">Your name / family name</label>
+          <input id="name" type="text" autocomplete="name" required>
+        </div>
+        <div>
+          <label>Will you be joining us?</label>
+          <div class="choice">
+            <input type="radio" id="yes" name="attending" value="Yes" checked><label for="yes">Joyfully attending</label>
+            <input type="radio" id="no" name="attending" value="No"><label for="no">Regretfully can't</label>
+          </div>
+        </div>
+        <div class="row2" id="counts">
+          <div><label for="adults">Adults</label><select id="adults"></select></div>
+          <div><label for="kids">Kids</label><select id="kids"></select></div>
+        </div>
+        <div>
+          <label for="email">Email <span class="hint">(optional)</span></label>
+          <input id="email" type="email" autocomplete="email">
+        </div>
+        <div>
+          <label for="message">Message <span class="hint">(optional)</span></label>
+          <textarea id="message" placeholder="Blessings, dietary needs, anything you'd like us to know"></textarea>
+        </div>
+        <button class="submit" id="submit" type="submit">Send RSVP</button>
+        <div class="status" id="status" role="status" aria-live="polite"></div>
+      </form>
+
+      <div class="thanks" id="thanks" hidden>
+        <h3>Thank you!</h3>
+        <p id="thanksMsg"></p>
+        <button class="btn-sec" type="button" id="edit" style="max-width:260px">Change my RSVP</button>
+      </div>
+    </div>
+
+    <p style="text-align:center;margin-top:20px"><button class="linkish" id="notMe" type="button">Not you? Use a different phone number</button></p>
+  </section>
+
+  <footer>
+    <div>With love,</div>
+    <div class="fam">Phani &amp; Deepthi Family</div>
+    <div>Please do come with your family and seek Lord Shiva's blessings.</div>
+  </footer>
+</div>
+
+<script>
+/* ====== CONFIG: paste your Apps Script Web App URL here ====== */
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxc9Ou7DFf4lBiY_frGxC0k3z3-K5IPsE5tpoUapEvZOr2g-qjslnNF6bkaacTe2oZr2Q/exec";
+/* ============================================================= */
+
+const $ = (id) => document.getElementById(id);
+const connected = /^https:\/\/script\.google\.com\//.test(SCRIPT_URL);
+const digits = (s) => String(s || "").replace(/\D/g, "").slice(-10);
+const fmtPhone = (d) => d.length === 10 ? `(${d.slice(0,3)}) ${d.slice(3,6)}-${d.slice(6)}` : d;
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} },
+  del(k) { try { localStorage.removeItem(k); } catch (e) {} }
+};
+function setStatus(el, msg, kind) { el.textContent = msg; el.className = "status " + (kind || ""); }
+
+let PHONE = "", EVENT = null;
+
+/* ---------- gate ---------- */
+async function unlock(phone, silent) {
+  const gs = $("gateStatus"), btn = $("gateBtn");
+  if (!connected) { setStatus(gs, "The invitation isn't connected yet. Please check back soon.", "err"); return; }
+  if (phone.length < 10) { setStatus(gs, "Please enter your 10-digit phone number.", "err"); return; }
+  btn.disabled = true; setStatus(gs, silent ? "Opening your invitation…" : "Checking the guest list…");
+  try {
+    const res = await fetch(SCRIPT_URL + "?phone=" + encodeURIComponent(phone));
+    const data = await res.json();
+    if (!data.ok) throw new Error(data.error);
+    if (!data.allowed) {
+      store.del("rsvpPhone");
+      setStatus(gs, silent ? "" : "Sorry, we couldn't find this number on our guest list. Please contact Phani or Deepthi.", silent ? "" : "err");
+      return;
+    }
+    PHONE = phone; store.set("rsvpPhone", phone);
+    showInvitation(data);
+    setStatus(gs, "");
+  } catch (e) {
+    setStatus(gs, "Couldn't reach the invitation right now. Please try again in a moment.", "err");
+  } finally { btn.disabled = false; }
+}
+$("gateForm").addEventListener("submit", (ev) => { ev.preventDefault(); unlock(digits($("gatePhone").value)); });
+
+/* ---------- invitation ---------- */
+function fill(sel, from, to) { for (let i = from; i <= to; i++) sel.add(new Option(String(i), String(i))); }
+fill($("adults"), 1, 15); fill($("kids"), 0, 10);
+$("adults").value = "2"; $("kids").value = "0";
+
+const attending = () => document.querySelector('input[name=attending]:checked').value;
+const syncCounts = () => { $("counts").hidden = attending() !== "Yes"; };
+document.querySelectorAll('input[name=attending]').forEach(r => r.addEventListener("change", syncCounts));
+
+function showInvitation(data) {
+  EVENT = data.event;
+  if (data.image) { $("inviteImg").src = data.image; $("inviteImg").hidden = false; }
+  $("welcome").textContent = data.guestName ? `Dear ${data.guestName},` : "";
+  $("dDate").textContent = EVENT.dateText;
+  $("dTime").textContent = EVENT.timeText;
+  $("dAddr").textContent = EVENT.address;
+  $("maps").href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(EVENT.address);
+  $("gcal").href = "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+    "&text=" + encodeURIComponent(EVENT.name + " — Phani & Deepthi Family") +
+    "&dates=" + EVENT.startUtc + "/" + EVENT.endUtc +
+    "&location=" + encodeURIComponent(EVENT.address) +
+    "&details=" + encodeURIComponent("Sahasra Lingarchana with 1000 Shiva Lingas. Please come with your family and seek Lord Shiva's blessings.");
+
+  $("phone").value = fmtPhone(PHONE);
+  const r = data.rsvp;
+  if (r) {
+    $("name").value = r.name || "";
+    $("email").value = r.email || "";
+    (r.attending === "No" ? $("no") : $("yes")).checked = true;
+    if (r.attending === "Yes") { $("adults").value = String(r.adults || 1); $("kids").value = String(r.kids || 0); }
+    $("message").value = r.message || "";
+    $("found").hidden = false;
+    $("submit").textContent = "Update RSVP";
+  } else {
+    $("name").value = data.guestName || "";
+    $("found").hidden = true;
+    $("submit").textContent = "Send RSVP";
+  }
+  syncCounts();
+  $("form").hidden = false; $("thanks").hidden = true;
+  $("gate").hidden = true; $("invitation").hidden = false;
+  window.scrollTo(0, 0);
+}
+
+$("ics").addEventListener("click", () => {
+  if (!EVENT) return;
+  const esc = (s) => s.replace(/,/g, "\\,");
+  const ics = ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Sahasra Lingarchana//EN","BEGIN:VEVENT",
+    "UID:sahasra-lingarchana-20261122@phani-deepthi","DTSTAMP:20261101T000000Z",
+    "DTSTART:" + EVENT.startUtc, "DTEND:" + EVENT.endUtc,
+    "SUMMARY:" + esc(EVENT.name + " — Phani & Deepthi Family"),
+    "LOCATION:" + esc(EVENT.address),
+    "DESCRIPTION:" + esc("Sahasra Lingarchana with 1000 Shiva Lingas."),
+    "END:VEVENT","END:VCALENDAR"].join("\r\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([ics], { type: "text/calendar" }));
+  a.download = "sahasra-lingarchana.ics";
+  document.body.appendChild(a); a.click(); a.remove();
+});
+
+$("form").addEventListener("submit", async (ev) => {
+  ev.preventDefault();
+  const st = $("status"), btn = $("submit");
+  const name = $("name").value.trim();
+  if (!name) { setStatus(st, "Please enter your name.", "err"); $("name").focus(); return; }
+  const payload = {
+    phone: PHONE, name, attending: attending(),
+    adults: Number($("adults").value), kids: Number($("kids").value),
+    email: $("email").value.trim(), message: $("message").value.trim()
+  };
+  btn.disabled = true; setStatus(st, "Sending…");
+  try {
+    // text/plain avoids a CORS preflight, which Apps Script doesn't answer
+    const res = await fetch(SCRIPT_URL, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(payload) });
+    const data = await res.json();
+    if (!data.ok) throw new Error(data.error || "");
+    $("form").hidden = true; $("thanks").hidden = false;
+    $("found").hidden = false; $("submit").textContent = "Update RSVP";
+    $("thanksMsg").textContent = payload.attending === "Yes"
+      ? `${data.updated ? "Your RSVP has been updated" : "We've received your RSVP"}, ${name}. We look forward to seeing ` +
+        `${payload.adults + payload.kids > 1 ? "all of you" : "you"} on ${EVENT.dateText.replace(/, \d{4}$/, "")} at 6:00 PM. 🙏`
+      : `${data.updated ? "Your RSVP has been updated" : "Thank you for letting us know"}, ${name}. We'll miss you — you're in our prayers. 🙏`;
+    setStatus(st, "");
+  } catch (e) {
+    setStatus(st, e.message || "Couldn't send your RSVP. Please try again in a moment.", "err");
+  } finally { btn.disabled = false; }
+});
+
+$("edit").addEventListener("click", () => { $("thanks").hidden = true; $("form").hidden = false; });
+$("notMe").addEventListener("click", () => {
+  store.del("rsvpPhone"); PHONE = ""; EVENT = null;
+  $("invitation").hidden = true; $("gate").hidden = false;
+  $("gatePhone").value = ""; $("gatePhone").focus();
+});
+
+/* Returning guest on the same device: open automatically */
+const saved = store.get("rsvpPhone");
+if (saved) { $("gatePhone").value = fmtPhone(saved); unlock(saved, true); }
+</script>
+</body>
+</html>
